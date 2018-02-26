@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+body {background-color: powderblue;}
+h1   {color: blue;font-family:verdana;}
+p    {color: red;}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- jinja2 -->
+    <h1>{{article_title}}</h1>
+    <p>Buồn ị</p>
+    {% for post in posts %}
+      <!-- <p>{{post['content']}}</p>
+      <i>{{post['author']}}</i> -->
+      <p>{{post.content}}</p>
+      <i>{{post.author}}</i>
+    {% endfor %}
+    <iframe src="http://localhost:5000/blog"height="1200" width="1300"></iframe>
+  </body>
+</html>
