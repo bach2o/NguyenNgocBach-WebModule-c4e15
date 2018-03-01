@@ -18,7 +18,8 @@ def user(username):
         content = users[username]
         return render_template('user.html', content = content)
     else:
-        return "Not_found"
+        content = 'Username not found in database.'
+        return render_template('user.html', content = content)
 
 if __name__ == '__main__':
   app.run(debug=True)

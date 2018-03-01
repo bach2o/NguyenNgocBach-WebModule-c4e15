@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+body {background-color: powderblue;}
+h1   {color: blue;font-family:verdana;}
+p    {font-family:arial;}
+}
+</style>
+    <meta charset="utf-8">
+    <title>Search result</title>
+  </head>
+  <body>
+    <h1>Your {{numbers_of_people}} search results</h1>
+    {% for customer in customers %}
+     {% if loop.index0 < numbers_of_people | int %}
+       <p><b>{{loop.index}}. {{ customer.name  }}</b></p>
+       <p>Gender: {{ customer.gender }}</p>
+       <p>Email:{{ customer.email }}</p>
+       <p>Telephone number: {{ customer.phone }}</p>
+       <p>Current job: {{ customer.job }}</p>
+       <p>Company: {{ customer.company }}</p>
+       <p>Contacted? {{ customer.contacted }}</p>
+     {%  endif %}
+    {%  endfor  %}
+
+  </body>
+</html>
