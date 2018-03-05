@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+body {background-color: powderblue;}
+h1   {color: blue;font-family:verdana;}
+p    {color: red;}
+}
+</style>
+    <meta charset="utf-8">
+    <title>Warm Winter project - Customers</title>
+  </head>
+  <body>
+    <h1>Customers participated in the project</h1>
+    {%  for customer in customers  %}
+      <p><b>{{ customer.name  }}</b></p>
+      <p>{{ customer.gender }}</p>
+      <p>{{ customer.email }}</p>
+      <p>{{ customer.phone }}</p>
+      <p>{{ customer.job }}</p>
+      <p>{{ customer.company }}</p>
+      <p>{{ customer.contacted }}</p>
+    {%  endfor  %}
+
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+body {background-color: powderblue;}
+h1   {color: blue;font-family:verdana;}
+p    {color: red;}
+}
+</style>
+    <meta charset="utf-8">
+    <title>Warm Winter project - Customers</title>
+  </head>
+  <body>
+    <h1>Customers participated in the project</h1>
+    {%  for customer in customers  %}
+      <p><b>{{ customer.name  }}</b></p>
+      <p>{{ customer.gender }}</p>
+      <p>{{ customer.email }}</p>
+      <p>{{ customer.phone }}</p>
+      <p>{{ customer.job }}</p>
+      <p>{{ customer.company }}</p>
+      <p>{{ customer.contacted }}</p>
+    {%  endfor  %}
+
+  </body>
+</html>
+>>>>>>> c66cbb960d8d7951e6cc6f66a65ddca735944685

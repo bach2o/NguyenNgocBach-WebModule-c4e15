@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+body {background-color: powderblue;}
+h1   {color: blue;font-family:Arial;}
+p    {color: black;}
+}
+</style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for service in all_services %}
+      <b>{{loop.index}}.{{service.name}}</b>
+      <div class="">
+        <img src = {{service.image}}></img>
+      </div>
+      <div class="">
+        <p>Year of birth: {{service.yob}}</p>
+        <p>Gender: {{ "Female" if service.gender == 0 else "Male" }}</p>
+        <a href="{{ url_for('detail', service_id = service.id) }}">Detail</a>
+        <a href="{{ url_for('modify', service_id = service.id) }}">Modify</a>
+        <a href="{{ url_for('delete', service_id = service.id) }}">Delete</a>
+      </div>
+    {% endfor %}
+  </body>
+</html>
