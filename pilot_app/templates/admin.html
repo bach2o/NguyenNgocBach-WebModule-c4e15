@@ -72,7 +72,7 @@ table, th, td {
         {% endif %} -->
       </td>
       <td>
-        <a href="#">Modify</a>
+        <a href="{{ url_for('modify', service_id = service.id) }}">Modify</a>
         <a href="{{ url_for('delete', service_id = service.id) }}">Delete</a>
       </td>
     </tr>

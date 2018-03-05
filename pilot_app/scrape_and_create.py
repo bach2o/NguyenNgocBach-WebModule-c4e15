@@ -7,7 +7,7 @@ from faker import Faker
 
 mlab.connect()
 
-quote_page = "http://naruto.wikia.com/wiki/Jiraiya"
+quote_page = "http://naruto.wikia.com/wiki/Sasuke_Uchiha"
 
 page = urlopen(quote_page)
 
@@ -35,13 +35,13 @@ fake = Faker()
 service = Service(
     image ,
     name ,
-    yob = -38,  # Year of birth
+    yob = 0,  # Year of birth
     gender = 1, #0: female, 1: male
-    height = 191,
-    measurements = [85,62,85], # List
+    height = 151,
+    measurements = [67,55,64], # List
     phone=fake.phone_number(),
     address = "Hidden Leaf Village",
-    description = "Jiraiya (自来也) was one of Konohagakure's Sannin. Famed as a hermit and pervert of stupendous ninja skill, Jiraiya travelled the world in search of knowledge that would help his friends, the various novels he wrote, and, posthumously, the world in its entirety – knowledge that would be passed on to his godson and final student, Naruto Uzumaki. ",
+    description = "Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving members of Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered their clan, Sasuke made it his mission in life to avenge them by killing Itachi. He is added to Team 7 upon becoming a ninja and, through competition with his rival and best friend, Naruto Uzumaki, Sasuke starts developing his skills. ",
     status = choice([True, False])
                 )
 service.save()
