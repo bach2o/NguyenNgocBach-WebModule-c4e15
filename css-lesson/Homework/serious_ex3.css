@@ -1,0 +1,30 @@
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-red {
+    color:red;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-size-18px {
+    font-size: 18px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.font-style-roboto {
+    font-family: Roboto;
+}
+.block_container {
+}
+.block1, .block2 {
+    display: inline-block;
+    width: 600px;
+    float: left;
+}

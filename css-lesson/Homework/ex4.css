@@ -1,0 +1,23 @@
+.red {
+    color: rgb(0, 0, 0);
+    background-color: #f42127;
+}
+
+.blue {
+    color: rgb(255, 255, 255);
+    background-color: #2196F3;
+}
+
+.green {
+    color: #fff;
+    background-color: rgb(41, 187, 34);
+}
+
+.section {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.container {
+    padding: 0.01em 16px;
+}

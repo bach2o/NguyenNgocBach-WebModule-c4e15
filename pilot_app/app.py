@@ -36,7 +36,10 @@ def modify(service_id):
         yob = int(form['yob'])
         phone = form['phone']
         gender = form['gender']
-        service_detail.update(set__name = name, yob = yob, phone = phone, gender = gender)
+        description = form['description']
+        address = form['address']
+        # measurements = form['measurements']
+        service_detail.update(set__name = name, yob = yob, phone = phone, gender = gender, description = description, address = address)
         service_detail.reload()
         # return render_template('modify.html', service = service_detail)
         return "{0}, {1}, {2}, {3} updated".format(name, yob, phone, gender)
@@ -82,18 +85,23 @@ def create():
         yob = int(form['yob'])
         phone = form['phone']
         gender = form['gender']
+        height = int(form['height'])
+        address = form['address']
+        # measurements = form['measurements']
+        description = form['description']
         new_service = Service(name = name,
                               yob = yob,
                               phone = phone,
                               gender = gender,
+                              height = height,
+                              # measurements = measurements,
+                              address = address,
+                              description = description,
                               status = choice([True, False])
                               )
         new_service.save()
 
         return "{0} {1} {2} posted and saved".format(name, yob, phone)
-
-
-
 
 if __name__ == '__main__':
   app.run(debug=True)

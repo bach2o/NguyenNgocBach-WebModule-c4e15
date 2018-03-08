@@ -28,8 +28,19 @@
       <input type="text" name = "yob" value = {{service.yob}}><br>
       <label>Phone number</label><br>
       <input type="text" name = "phone" value = {{service.phone}}><br>
+      <!-- <label>Measurements</label><br>
+      <input type="text" name = "measurements" value = {{service.measurements}}><br> -->
+      <label>address</label><br>
+      <input type="text" name = "address" value = {{service.adress}}><br>
+      {% if service.gender == 1 %}
+      <input type="radio" name="gender" value="1" checked> Male<br>
+      <input type="radio" name="gender" value="0" > Female<br>
+      {% else %}
       <input type="radio" name="gender" value="1"> Male<br>
       <input type="radio" name="gender" value="0" checked> Female<br>
+      {% endif %}
+      <label>Description</label><br>
+      <input type="text" name = "description" value = {{service.description}}><br>
       <input type="Submit" value="Modify">
       <input type="reset">
     </form>

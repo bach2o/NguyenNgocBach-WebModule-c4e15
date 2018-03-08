@@ -1,0 +1,11 @@
+div p {
+  background-color: #c3f7f7;
+}
+
+.div0 p {
+  text-decoration: underline;
+  background-color: Green;
+}
+.div1 > p {
+  background-color: cyan;
+}
