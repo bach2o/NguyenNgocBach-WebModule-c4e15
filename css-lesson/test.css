@@ -1,0 +1,59 @@
+.border-radius {
+  border-radius: 3px;
+  box-shadow: 5px;
+  border-style:solid;
+  border-color:rgb(208, 208, 208);
+}
+
+.div-size {
+  width: 70px;
+  height:auto;
+  /* height: 50px; */
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
+}
+
+.p-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div-align-center {
+  text-align: center;
+  vertical-align: middle;
+  /* line-height: 100px;  */
+}
+
+.vertical-align {
+  vertical-align: middle;
+}
+.font-size-24 {
+  font-size: 24px;
+}
+.text-decoration {
+  font-family: Roboto;
+  color: Black;
+  text-decoration: none;
+  padding: 7px;
+}
+
+.padding-10px {
+  padding: 10px;
+}
+
+.padding-6px {
+  padding: 6px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.bg-lightgreen {
+  background-color: lightgreen;
+}

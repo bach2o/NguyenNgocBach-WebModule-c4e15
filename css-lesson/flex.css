@@ -1,0 +1,33 @@
+.d-flex {
+  display: flex;
+  background: #ccc;
+  padding: 10px;
+  /* mặc định flex-flow là row wrap */
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  height: 500px;
+  /* align-items: center; */
+  align-content: space-around;
+  /* align-items xếp content theo chiều dọc, justify-content xếp content theo chiều ngang. */
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.w-80px {
+  width: 80px;
+}
+
+.bg-green {
+  background: green;
+}
+
+.mx-10px {
+  margin: 10px;
+}
+
+.h-80px {
+  height: 80px;
+}
